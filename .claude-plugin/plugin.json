@@ -9,6 +9,6 @@
     "url": "https://theoryy.dev"
   },
   "repository": "https://github.com/Theory-Y/theoryy-workflow",
-  "license": "UNLICENSED",
+  "license": "AGPL-3.0",
   "keywords": ["workflow", "orchestration", "subagents", "theoryy"]
 }
