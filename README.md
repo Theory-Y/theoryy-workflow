@@ -1,6 +1,6 @@
 # TheoryY Workflow
 
-A plugin that lets makes Claude's work scalable, maintainable, and easy-to-understand. It even responds to you in an understandable langauge!
+A plugin that makes Claude's work scalable, maintainable, and easy-to-understand. It even responds to you in an understandable language!
 
 Inspiration: `caveman` and `superpowers` in a single package.
 
@@ -9,7 +9,7 @@ Inspiration: `caveman` and `superpowers` in a single package.
 
 ## Pre-text
 
-AI agents build code incredibly quickly, but they (yes, especially Opus 5) are overly verbose responding, documumenting, and commiting.
+AI agents build code incredibly quickly, but they (yes, especially Opus 5) are overly verbose responding, documenting, and committing.
 
 Over time, you get a repo that is cluttered, hard-to-maintain, and difficult to scale.
 
@@ -43,7 +43,7 @@ or `/initiate` to let Claude decide whether to run each:
 - The three skills differ in how much the manager model does by hand
   - `orchestrator` — virtually none.
   - `player-coach` — hand-edits complex tasks, delegates menial ones.
-  - `commander` — (rarely used) your secretary who hands down work to `player-coaches`; lets you do quick edits to two separate repos, best if they are related. (DISCLAIMER: NOT A MULTITASKING TOOL BY DESIGN, IT'S PURPOSE IS TO ORGNISE AND RUN RELATED TASKS).
+  - `commander` — (rarely used) your secretary who hands down work to `player-coaches`; lets you do quick edits to two separate repos, best if they are related. (DISCLAIMER: NOT A MULTITASKING TOOL BY DESIGN, IT'S PURPOSE IS TO ORGANISE AND RUN RELATED TASKS).
 
 ## Team
 
