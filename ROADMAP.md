@@ -8,9 +8,9 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
 ### Polish week (before first public push)
 
 - [ ] **License** — `UNLICENSED` placeholder in plugin.json; pick one before publishing.
-- [ ] **Contacts + org** — `support@theoryy.dev` / `theoryy.dev` unverified; repo currently at
-  `aier9500/theoryy-workflow`, transfer to `Theory-Y/theoryy-workflow` and update
-  plugin.json `repository`.
+- [ ] **Contacts** — `support@theoryy.dev` / `theoryy.dev` unverified. Org transfer DONE
+  (2026-08-19): repo lives at `Theory-Y/theoryy-workflow`; plugin.json `repository` already
+  matches.
 - [ ] **Consumer-visible inert files** — repo=plugin, so `ROADMAP.md`, `action-plans/`, and any
   local `.claude/` state would ship with installs (`.gitignore` covers `.claude/`); prune or
   accept before publish.
