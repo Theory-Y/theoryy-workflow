@@ -25,7 +25,6 @@ When tempted to play, ask: *"Would a curated brief to a `task-executor-*` tier d
 | `Explore` (builtin, read-only) | broad fan-out search — conclusions, not dumps | low |
 | `Plan` (builtin, read-only) | architecting an implementation strategy | low |
 | `folder-restructurer` (Haiku) | mechanical file/folder moves & renames | very low |
-| `graphify-runner` (cheap) | knowledge-graph queries when `graphify-out/` exists | very low |
 | `Workflow` tool | fan-out/pipeline over a known work-list with verification | scales |
 | **yourself** | critical core, one-shot edits, context-bound synthesis | high |
 
@@ -41,7 +40,7 @@ If a project subagent is absent, fall back to `general-purpose` / `Explore` / `P
 
 ### 2. Route each task
 Cheapest capable resource wins; reserve "play" for the rules above.
-- Search/where → `Explore`. Graph questions → `graphify-runner`. Mechanical moves → `folder-restructurer`.
+- Search/where → `Explore`. Mechanical moves → `folder-restructurer`.
 - Real implementation/analysis → `task-executor-*` with a curated brief (deliverable, success criteria, constraints, paths).
 - Same staged treatment over a known list → `Workflow` (pipeline by default).
 - Architectural spine / 30-second edit / context only you hold → **play it**, then back to coaching.

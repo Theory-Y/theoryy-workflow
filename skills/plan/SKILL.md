@@ -22,7 +22,7 @@ trigger: /plan
 - `task-executor-medium` — low-stakes, routine, reversible, well-bounded.
 - `task-executor-high` — the **default** for substantive multi-step work.
 - `task-executor-xhigh` — only *both* high-stakes *and* high-complexity.
-- Helpers — `Explore` (search), `graphify-runner` (graph), `folder-restructurer` (mechanical moves), `subdir-readme-author` (folder READMEs), `Workflow` (known work-list, identical staged treatment).
+- Helpers — `Explore` (search), `folder-restructurer` (mechanical moves), `subdir-readme-author` (folder READMEs), `Workflow` (known work-list, identical staged treatment).
 - **Play-it-yourself** — architectural keystone, one-shot edits, context only you hold.
 
 (Read `.claude/MANIFEST.md` when present for the authoritative roster.)

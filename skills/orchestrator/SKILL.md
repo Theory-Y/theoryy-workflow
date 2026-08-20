@@ -23,9 +23,8 @@ Delegation targets depend on the project. **Read `.claude/MANIFEST.md` when pres
 | `Explore` (builtin, read-only) | broad fan-out search, "where/which files" — conclusions, not dumps | low |
 | `Plan` (builtin, read-only) | architecting an implementation strategy | low |
 | `folder-restructurer` (Haiku) | mechanical file/folder moves & renames, no code logic | very low |
-| `graphify-runner` (cheap) | knowledge-graph queries when `graphify-out/` exists | very low |
 | `Workflow` tool | fan-out/pipeline over a known work-list with verification stages | scales |
-| skills (`graphify`, etc.) | domain procedures — invoke directly when the task IS that domain | n/a |
+| skills | domain procedures — invoke directly when the task IS that domain | n/a |
 
 If a project subagent is absent, fall back to `general-purpose` / `Explore` / `Plan` + `Workflow`.
 
@@ -39,7 +38,7 @@ If a project subagent is absent, fall back to `general-purpose` / `Explore` / `P
 
 ### 2. Route each task
 Cheapest capable resource wins; bias hard toward the cheap end:
-- "Where is X / which files" → `Explore`, never grep yourself. Graph questions → `graphify-runner`. Mechanical moves → `folder-restructurer`.
+- "Where is X / which files" → `Explore`, never grep yourself. Mechanical moves → `folder-restructurer`.
 - Real implementation/analysis → `task-executor-*` with a **curated brief**: deliverable, success criteria, constraints, relevant paths.
 - Known list needing the same multi-stage treatment per item → `Workflow` (pipeline by default).
 

@@ -4,15 +4,6 @@
 > Don't edit in a consuming project — overwritten on plugin upgrade. Project-specific context goes
 > in that project's `CLAUDE.md`.
 
-## graphify
-
-Knowledge graph at graphify-out/ (god nodes, communities, cross-file relationships).
-
-- Codebase questions: if graphify-out/graph.json exists, first run `graphify query "<question>"`; `graphify path "<A>" "<B>"` for relationships, `graphify explain "<concept>"` for concepts. Scoped subgraphs — much smaller than GRAPH_REPORT.md or grep.
-- Broad navigation: use graphify-out/wiki/index.md if present, not raw source browsing.
-- graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain fall short.
-- After code changes: `graphify update .` (AST-only, no API cost).
-
 ## Workflow
 
 1. If `OVERRIDE.md` exists in repo root, complete its items **before** any ROADMAP.md items.
@@ -34,7 +25,7 @@ If present in repo root, it overrides `ROADMAP.md` priority. Prompt the user to 
 Repo-root **master** document: the single TODO list + log of recent important changes. Source of truth for "what's open" and "what changed lately".
 
 - Whenever you touch the repo, append open action items and notable changes.
-- Keep it lean — TODO list + change log, **not** a knowledge base. Graphify and subfolder READMEs answer codebase questions.
+- Keep it lean — TODO list + change log, **not** a knowledge base. Subfolder READMEs answer codebase questions.
 - Architecture/design/brand detail belongs in the relevant `DESIGN.md` / `SKILL.md` / `BRAND.md`, not here.
 
 ## Subfolder READMEs

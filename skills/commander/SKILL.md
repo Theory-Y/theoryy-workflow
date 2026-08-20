@@ -22,7 +22,7 @@ You are the **Commander** — top of a three-level chain, on the main thread. Fo
 Tool grants enforce the cap (L3 leaves have no `Agent` tool). **No L4** — by design.
 
 ## Step 0 — roster
-Read `.claude/MANIFEST.md` when present (canonical roster). Dispatch targets: `middle-manager` (L2, whole sub-project), `task-executor-*` + helpers (`graphify-runner`, `folder-restructurer`, `subdir-readme-author`) for direct pieces, `Workflow` tool for wide fan-out, `plan-adversary-reviewer` to vet a plan.
+Read `.claude/MANIFEST.md` when present (canonical roster). Dispatch targets: `middle-manager` (L2, whole sub-project), `task-executor-*` + helpers (`folder-restructurer`, `subdir-readme-author`) for direct pieces, `Workflow` tool for wide fan-out, `plan-adversary-reviewer` to vet a plan.
 
 ## Nest vs flat (decide first)
 - **Several large, independent sub-projects**, each worth a dedicated manager → **nest**: one `middle-manager` each.

@@ -19,7 +19,7 @@ trigger: /brainstorm
 
 ## Method
 
-1. **Ground in reality first** — skim the relevant area (`Explore`, `graphify query`, a quick read) so options are real, not invented.
+1. **Ground in reality first** — skim the relevant area (`Explore`, a quick read) so options are real, not invented.
 2. **Generate for breadth** — push past the first obvious approach; deliberately reach for a different angle (simpler/cheaper, more ambitious, reuse vs build, buy vs make).
 3. **Ask only the forking questions** — via `AskUserQuestion`, recommended option first. Questions that don't change direction aren't forks.
 4. **Converge the handoff** — name the chosen direction crisply, pass to `/plan`, stop. Standalone you may pick with rationale; **inside `/initiate`, surface the recommendation for the user to confirm** (the lifecycle gates on the user here).

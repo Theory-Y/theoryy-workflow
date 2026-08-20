@@ -17,7 +17,7 @@ Given a target subdirectory, produce (or update) a single README.md inside it do
 
 1. **Scope** — confirm the exact subdirectory; ask if ambiguous. Document only it and its descendants, never the whole project.
 2. **Read everything in scope** — every file and nested folder (source, configs, data, scripts, docs, tests). Never guess at unread contents; for large files, read enough for purpose, public interfaces, notable patterns.
-3. **Broader context** — parent directory listing + root README/CLAUDE.md; what depends on this directory and what it depends on; the directory's role (feature module, utility layer, config bundle, asset folder, test suite…). If a knowledge graph exists (graphify-out/), prefer `graphify query/path/explain` over broad grepping, and graphify-out/wiki/index.md for navigation.
+3. **Broader context** — parent directory listing + root README/CLAUDE.md; what depends on this directory and what it depends on; the directory's role (feature module, utility layer, config bundle, asset folder, test suite…).
 4. **Detect conventions** — naming patterns, organization, style, entry points, public vs internal APIs, idioms — so contributors stay consistent.
 5. **Synthesize, don't invent** — every statement grounded in what you observed; mark uncertainty or omit. Never fabricate APIs, parameters, behavior.
 
@@ -44,7 +44,7 @@ Read every file (not a sample)? Every claim traceable? Links valid? Directory's 
 
 - Write `README.md` inside the target subdirectory; if one exists, update in place, preserving still-accurate content and intentional custom sections.
 - Summarize briefly what the README covers and flagged uncertainties.
-- Follow project change-tracking conventions where applicable (e.g. ROADMAP.md change log, graphify update).
+- Follow project change-tracking conventions where applicable (e.g. ROADMAP.md change log).
 - Ask for clarification when: target directory is ambiguous, it mixes unrelated concerns with unclear intended scope, or critical project context can't be inferred.
 
 **Agent memory**: record project-wide README structure conventions that worked, how top-level directories map to responsibilities, recurring naming/import idioms, dependency hotspots, relevant tooling conventions. Keep entries concise and durable; skip what code/git/CLAUDE.md already show; verify remembered facts before relying on them — they go stale.
