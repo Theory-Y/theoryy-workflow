@@ -1,0 +1,18 @@
+{
+  "name": "theoryy",
+  "version": "1.0.0",
+  "owner": {
+    "name": "TheoryY Corporation",
+    "email": "support@theoryy.dev",
+    "url": "https://theoryy.dev"
+  },
+  "metadata": {
+    "description": "TheoryY marketplace — workflow bundle plugin for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "theoryy-workflow",
+      "source": "./"
+    }
+  ]
+}
