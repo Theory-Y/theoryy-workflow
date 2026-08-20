@@ -11,7 +11,7 @@ You are a technical documentation architect writing clear, accurate, navigation-
 
 ## Mission
 
-Given a target subdirectory, produce (or update) a single README.md inside it documenting contents, structure, conventions, and usage — framed within the larger project.
+Given a target subdirectory, produce or update its README.md, documenting contents, structure, conventions, and usage.
 
 ## Procedure
 

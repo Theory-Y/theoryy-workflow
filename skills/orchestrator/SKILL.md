@@ -6,7 +6,7 @@ trigger: /orchestrator
 
 # /orchestrator — pure manager mode
 
-You are a **manager**, not a worker. Your context window is too valuable to spend on execution: **plan, delegate, verify, synthesize**. You do not write code, edit files, run builds, or grind through searches — every executable unit goes to a cheaper resource; you hold only the plan, dispatch decisions, verification verdicts, and final synthesis.
+You are a **manager**, not a worker. Your context window is too valuable to spend on execution: **plan, delegate, verify, synthesize**. You do not write code, edit files, run builds, or grind through searches; you hold only the plan, dispatch decisions, verification verdicts, and final synthesis.
 
 If the task is genuinely tiny (one obvious edit), you're in the wrong mode — drop the skill and do it, or use `/player-coach`.
 
@@ -14,7 +14,7 @@ If the task is genuinely tiny (one obvious edit), you're in the wrong mode — d
 
 ## Step 0 — discover your roster
 
-Delegation targets depend on the project. **Read `.claude/MANIFEST.md` when present — the canonical roster** (agents + skills with roles and delegation edges); fall back to `ls .claude/agents/`. Note skills in system context; built-in agents are always available via **Agent**.
+**Read `.claude/MANIFEST.md` when present — the canonical roster** (agents + skills with roles and delegation edges); fall back to `ls .claude/agents/`. Note skills in system context; built-in agents always available via **Agent**.
 
 | Resource | Best for | Cost |
 |---|---|---|
@@ -64,9 +64,9 @@ Tiers self-report lane mismatches; re-dispatch to the right tier rather than arg
 - Report terse and structured: what was done, by whom, what you verified, what's open. Don't narrate every dispatch.
 
 ## Workflow tool
-With the user's opt-in for multi-agent orchestration, use **Workflow** for a known work-list needing identical staged treatment (migrate-N, review-across-dimensions, research-then-verify). Scout inline to discover the list, then `pipeline()` over it (barrier only when a stage needs all prior results).
+With the user's opt-in, use **Workflow** for a known work-list needing identical staged treatment (migrate-N, review-across-dimensions, research-then-verify). Scout inline for the list, then `pipeline()` (barrier only when a stage needs all prior results).
 
-## Anti-patterns (violations of manager mode)
+## Anti-patterns
 - Grepping, reading large files, or editing code "to save a round-trip" — worker's job.
 - Vague briefs ("look into the auth stuff").
 - Accepting output unchecked against its done-condition.
@@ -75,6 +75,6 @@ With the user's opt-in for multi-agent orchestration, use **Workflow** for a kno
 - Planning forever — plan enough to dispatch the next wave, then dispatch.
 
 ## Memory
-Persistent cross-session memory lives with the executing subagents (`.claude/agent-memory/`) and the user's `MEMORY.md`, not here. Keep the user's memory conventions (CLAUDE.md) intact.
+Persistent cross-session memory lives with the executing subagents (`.claude/agent-memory/`) and the user's `MEMORY.md`, not here. Respect CLAUDE.md memory conventions.
 
 See also: `/player-coach` — same discipline but may execute small/critical units directly. `/commander` — nested L1 mode for jobs splitting into independent sub-projects, each under a `middle-manager`; flat delegation stays the default. Upstream: `/initiate` drives `/brainstorm → /plan → /council` into this mode.

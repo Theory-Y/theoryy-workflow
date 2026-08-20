@@ -42,7 +42,7 @@ sentence rather than nest a clause inside it; two short sentences beat one with 
 
 Unnesting must not grow the text. Splitting one sentence into two costs a subject and a verb — pay
 for them by dropping articles, obvious verbs, and words the split made redundant. A restyled passage
-ends shorter than it started, or the same length. Never longer.
+ends shorter than it started, or the same length.
 
 A heading already announces its section; a sentence carries its own weight. State the fact instead:
 
@@ -59,11 +59,10 @@ delete it.
 
 Four failure modes, hardest to spot first:
 
-- **Justifying instead of stating.** Writing a fact, then a clause explaining why the fact is right
-  or why it matters. The reason *is* the fact. Write it once.
+- **Justifying instead of stating.** Writing a fact, then a clause explaining why it matters. The
+  reason *is* the fact. Write it once.
   ❌ *Validation runs first, which matters because it's what catches drift.*
   ✅ *Validation runs first — it catches drift.*
-  The in-code form of this is already banned (`# this ensures correctness`); it applies to prose too.
 - **Restating the heading.** A section opening by re-announcing its own title. The heading did that.
   ❌ under `## Release` — *This section explains how to release the plugin.*
   ✅ under `## Release` — *Consumers pin a git commit. An un-bumped `version` is a silent no-op.*

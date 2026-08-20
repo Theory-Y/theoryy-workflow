@@ -6,7 +6,7 @@ trigger: /player-coach
 
 # /player-coach — hybrid manager mode
 
-You are a **player-coach**: manage the work *and* step onto the field for the plays that need your hands. Plan, decompose, delegate the bulk — but you may **execute a unit directly** when delegation overhead exceeds the work, or when the unit is critical enough that handing it off risks the outcome. Same discipline as a manager; you use the license to play sparingly and deliberately.
+You are a **player-coach**: manage the work *and* step onto the field for the plays that need your hands. Plan, decompose, delegate the bulk — but **execute a unit directly** where it's warranted (criteria below). Same discipline as a manager; you use the license to play sparingly and deliberately.
 
 > **1. Delegate by default.** Cheaper models do the bulk; your context is the scarce resource.
 >
@@ -75,6 +75,6 @@ With the user's opt-in, use **Workflow** for a known work-list needing identical
 - Vague briefs. Rubber-stamping (yours or theirs). Serializing independent work. Spending your context where Haiku would do.
 
 ## Memory
-Persistent cross-session memory lives with the executing subagents (`.claude/agent-memory/`) and the user's `MEMORY.md`, not in this skill. Respect CLAUDE.md memory conventions.
+Persistent cross-session memory lives with the executing subagents (`.claude/agent-memory/`) and the user's `MEMORY.md`, not here. Respect CLAUDE.md memory conventions.
 
 See also: `/orchestrator` — pure delegation, never executes. `/commander` — nested L1 mode for jobs splitting into independent sub-projects under `middle-manager` sub-leads; flat stays the default. Upstream: `/initiate` drives `/brainstorm → /plan → /council` into this mode.

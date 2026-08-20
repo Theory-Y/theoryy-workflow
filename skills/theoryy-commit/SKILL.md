@@ -6,9 +6,9 @@ trigger: /theoryy-commit
 
 # /theoryy-commit — TheoryY house commit style
 
-Write the message a busy teammate skims: one line, states the **effect**, near-zero cognitive load. This skill exists to rein in AI verbosity — no process narration, no multi-sentence paragraphs.
+Write the message a busy teammate skims: one line, states the **effect**. This skill exists to rein in AI verbosity — no process narration, no multi-sentence paragraphs.
 
-> **The one rule: describe the effect, not the method.** What the change *does/means* for the repo — not the steps taken. Short by default.
+> **The one rule: describe the effect, not the method** — what the change does for the repo, not the steps you took. Short by default.
 
 ## Split unrelated changes
 

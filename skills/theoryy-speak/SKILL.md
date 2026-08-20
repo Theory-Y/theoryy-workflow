@@ -128,8 +128,6 @@ Second failure, no openers or closers — every sentence still restates the one 
 
 > ✅ *Hiding beats ranking — a hidden folder leaves nothing to re-decide each morning.*
 
-Four sentences to one. Nothing was lost, because only one fact was ever there.
-
 ## Method
 
 1. Write the answer as one sentence.

@@ -22,7 +22,7 @@ If present in repo root, it overrides `ROADMAP.md` priority. Prompt the user to 
 
 ## ROADMAP.md
 
-Repo-root **master** document: the single TODO list + log of recent important changes. Source of truth for "what's open" and "what changed lately".
+Repo-root **master** document: the single TODO list + log of recent important changes.
 
 - Whenever you touch the repo, append open action items and notable changes.
 - Keep it lean — TODO list + change log, **not** a knowledge base. Subfolder READMEs answer codebase questions.
@@ -34,7 +34,7 @@ Each meaningful subfolder carries a `README.md` (purpose + local conventions). W
 
 ## House style
 
-`/theoryy-docstyle` sets the wording of everything written into the repo. It maps each file type to one of three compression levels. Agent-readable files (`SKILL.md`, agent definitions, this file) get plain full grammar. Human docs (`README.md`, `DESIGN.md`, `ROADMAP.md`) get word-dropping. Code comments and docstrings get the fewest possible words. Invoke the skill before writing or editing any of them. The rules live there, not here. Two sibling skills cover the other surfaces. `/theoryy-commit` handles commit messages. `/theoryy-speak` handles explaining something to the user in conversation: answer first, short plain sentences, no meta commentary.
+`/theoryy-docstyle` sets the wording of everything written into the repo. It maps each file type to one of three compression levels. Agent-readable files (`SKILL.md`, agent definitions, this file) get plain full grammar. Human docs (`README.md`, `DESIGN.md`, `ROADMAP.md`) get word-dropping. Code comments and docstrings get the fewest possible words. Invoke the skill before writing or editing any of them. The rules live there, not here. `/theoryy-commit` handles commit messages. `/theoryy-speak` handles explaining something to the user in conversation: answer first, short plain sentences, no meta commentary.
 
 ## Design philosophy
 

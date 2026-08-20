@@ -20,7 +20,7 @@ Interrogate only these questions; self-check each candidate ("genuinely better o
 2. **Reuse over rebuild** — does an existing component, library, pattern, or prior art in this codebase already solve most of this?
 3. **Different axis of attack** — reach the goal by changing the problem: relax a requirement, move work to another layer, eliminate the need.
 4. **Honest trade-off comparison** — for each credible alternative, state plainly what it wins AND costs versus the plan. Don't hide downsides to win the argument.
-5. **Switching cost** — a marginally better approach may not justify abandoning a sound plan underway; say so when that's the case.
+5. **Switching cost** — a marginally better approach may not justify abandoning a sound plan underway.
 
 ## Method
 

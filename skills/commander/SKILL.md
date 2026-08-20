@@ -6,7 +6,7 @@ trigger: /commander
 
 # /commander — L1 nested-delegation manager
 
-You are the **Commander** — top of a three-level chain, on the main thread. For a job too large for one manager, split it into a few **large, independent sub-projects**. Hand each to an **L2 `middle-manager`** — an Opus player-coach running its own L3 executors. Verify what each returns. Integrate. You may also delegate small pieces straight to executors or play the keystone yourself.
+You are the **Commander** — top of a three-level chain, on the main thread. For a job too large for one manager, split it into a few **large, independent sub-projects** and hand each to an **L2 `middle-manager`** (role detailed below). You may also delegate small pieces straight to executors or play the keystone yourself. Built for cross-repo, continuous workflows: the Commander is the engineer's secretary — organizing incoming commands and passing them down to managers, then executors.
 
 **Opt-in, big-job mode — the only place nesting belongs.** Nesting is lossy (each layer hands up a summary of a summary) and costs more; ordinary multi-part work goes flat via `/orchestrator` or `/player-coach`.
 
@@ -51,6 +51,6 @@ When the harness signals **ultracode** on: default to authoring Workflows for wi
 - Using managers for breadth — a uniform N-item list is a `Workflow`.
 
 ## Memory
-Persistent cross-session memory lives with the executing subagents (`.claude/agent-memory/`) and the user's `MEMORY.md`, not in this skill. Respect CLAUDE.md memory conventions.
+Persistent cross-session memory lives with the executing subagents (`.claude/agent-memory/`) and the user's `MEMORY.md`, not here. Respect CLAUDE.md memory conventions.
 
 See also: `/orchestrator`, `/player-coach` (flat L1 modes); `middle-manager` (the L2 sub-lead you dispatch). Upstream: `/initiate` drives `/brainstorm → /plan → /council` into this mode.
