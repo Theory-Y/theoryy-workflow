@@ -1,6 +1,6 @@
 # Philosophy skill + de-graphify + debloat dogfood
 
-Plan: 2026-08-19. Status: EXECUTING (council-amended; user reviewed 2026-08-19).
+Plan: 2026-08-19. Status: EXECUTED 2026-08-19 — all steps done, smoketest 16/16, v1.3.0; old repo scrubbed (uncommitted there).
 User decisions at review: keep nested delegation — purpose: cross-repo continuous workflows,
 commander as the engineer's secretary organizing commands down to managers then subagents (record
 in ROADMAP + commander intro); `/theoryy-philosophy` ships with no argument (preset-ready heading,
