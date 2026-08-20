@@ -95,7 +95,7 @@ defined at first use, and the slow-down rule below.
 - `terse-lite` — drop words the sentence survives without (articles, obvious verbs, lead-ins).
   Still reads as speech.
 - `terse-full` — minimum words. Fragments allowed, one fact per fragment:
-  `Plugin reads plugin/, not .claude/. Rebuild: /bundle-sync.`
+  `Hook injects workflow.md at session start. Mid-session edit: next session.`
   Never compress into ambiguity — if a fragment can be misread, spend the words.
 
 Switch back anytime with `/theoryy-speak base`.
@@ -118,8 +118,7 @@ Question: *"Why doesn't my skill edit show up?"*
 > ❌ *Great question! Let me walk you through how the plugin system works here. At a high level,
 > there are two locations involved, and understanding the distinction is important…*
 
-> ✅ *The installed plugin reads `plugin/`, not `.claude/`. Run `/bundle-sync` to rebuild `plugin/`
-> from your edit.*
+> ✅ *The session reads the copy injected at its start. Restart the session to load your edit.*
 
 Second failure, no openers or closers — every sentence still restates the one before it:
 

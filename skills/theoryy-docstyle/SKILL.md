@@ -46,9 +46,10 @@ ends shorter than it started, or the same length. Never longer.
 
 A heading already announces its section; a sentence carries its own weight. State the fact instead:
 
-> ❌ *It is worth noting that the plugin serves `plugin/`, not `.claude/`, so as mentioned above you
-> must rebuild.*
-> ✅ *The plugin serves `plugin/`, not `.claude/`. Edits ship only after a rebuild.*
+> ❌ *It is worth noting that the SessionStart hook injects `core/workflow.md`, so as mentioned
+> above a mid-session edit isn't picked up.*
+> ✅ *The SessionStart hook injects `core/workflow.md`. A mid-session edit waits for the next
+> session.*
 
 ## Sentences that carry nothing (all levels)
 
@@ -64,12 +65,12 @@ Four failure modes, hardest to spot first:
   ✅ *Validation runs first — it catches drift.*
   The in-code form of this is already banned (`# this ensures correctness`); it applies to prose too.
 - **Restating the heading.** A section opening by re-announcing its own title. The heading did that.
-  ❌ under `## Rebuild the plugin` — *This section explains how to rebuild the plugin.*
-  ✅ under `## Rebuild the plugin` — *`plugin/` is generated from `.claude/`. Never hand-edit it.*
+  ❌ under `## Release` — *This section explains how to release the plugin.*
+  ✅ under `## Release` — *Consumers pin a git commit. An un-bumped `version` is a silent no-op.*
 - **Serial paraphrase.** Two or three clauses carrying one idea, each rewording the last.
-  ❌ *Edits to `.claude/` don't ship on their own; you have to rebuild, because the plugin reads
-  `plugin/` rather than `.claude/`, so an un-rebuilt edit ships stale content.*
-  ✅ *The plugin reads `plugin/`. An un-rebuilt edit ships stale content.*
+  ❌ *Edits don't reach consumers on their own; you have to release, because installs pin a git
+  commit rather than your working tree, so an uncommitted edit ships nothing.*
+  ✅ *Installs pin a git commit. An uncommitted edit ships nothing.*
 - **Evaluative filler.** Adjectives that judge instead of inform: *clean, elegant, powerful, simple,
   straightforward, careful*. Extends the buzzword ban list below. If it doesn't change what the
   reader does, cut it.
@@ -99,21 +100,20 @@ if member.path != manifest_entry.path:
 ## Doc-file rules (terse-lite)
 
 - **Definitions before jargon.** Define each term of art at first use, before relying on it.
-  Bold-lead pattern works well: `**Bundle** — reusable workflows stored as file set under .claude/.`
+  Bold-lead pattern works well: `**Payload** — the files the plugin ships: agents/, skills/, hooks/, core/.`
 - Numbered steps and short lists over paragraph prose whenever order or membership matters.
 - Short declarative sentences; drop words that don't change meaning.
 
 Example passage:
 
-> **Bundle** — reusable workflows stored as file set under `.claude/`.
+> **Payload** — the files the plugin ships: `agents/`, `skills/`, `hooks/`, `core/`.
 >
-> **Problem** — Edits made to `.claude/`, but consumers use `plugin/`. Need to rebuild to not
-> silently ship stale content.
+> **Problem** — Consumers install a pinned git commit. Local edits ship nothing until released.
 >
-> **Function** — `/bundle-sync` runs, in order:
-> 1. Validate — makes sure members' frontmatter parses and cross-references point at files that exist
-> 2. Regenerate — Manifest §A rewritten from frontmatter; prevents drift
-> 3. Rebuild — `plugin/` recreated from `.claude/`, minus dev-only members
+> **Function** — a release runs, in order:
+> 1. Validate — frontmatter parses and cross-references point at files that exist
+> 2. Bump — `version` in `.claude-plugin/plugin.json`; un-bumped = silent no-op for consumers
+> 3. Commit + push — consumers pull the update
 
 ## Jargon and buzzwords (all levels)
 
