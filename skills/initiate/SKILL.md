@@ -21,7 +21,7 @@ Drive the **full lifecycle**: `brainstorm → plan → council → delegate`, on
 
 Run in order, but **gate on the user** at the decision points (direction after brainstorm; go/no-go after council) — don't barrel through unattended.
 
-**House styles, throughout:** invoke `/theoryy-speak` (base level) when the pipeline starts — it governs every explanation to the user from then on. Documents written in any phase — the action plan, `ROADMAP.md` entries, subfolder READMEs, code comments during delegation — follow `/theoryy-docstyle`; invoke it when the writing starts. Any commit the pipeline makes follows `/theoryy-commit`. Repeat the applicable styles in the prompt of each manager and executor you dispatch: subagents don't inherit skills.
+**House styles, throughout:** invoke `/theoryy-speak` (base level) when the pipeline starts — it governs every explanation to the user from then on. Documents written in any phase — the action plan, `ROADMAP.md` entries, subfolder READMEs, code comments during delegation — follow `/theoryy-docstyle`; invoke it when the writing starts. Any commit the pipeline makes follows `/theoryy-commit`. Repeat the applicable styles and the design philosophy in the prompt of each manager and executor you dispatch: subagents don't inherit skills.
 
 ## Manager-mode selection (phase 4)
 

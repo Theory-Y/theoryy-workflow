@@ -36,6 +36,14 @@ Each meaningful subfolder carries a `README.md` (purpose + local conventions). W
 
 `/theoryy-docstyle` sets the wording of everything written into the repo. It maps each file type to one of three compression levels. Agent-readable files (`SKILL.md`, agent definitions, this file) get plain full grammar. Human docs (`README.md`, `DESIGN.md`, `ROADMAP.md`) get word-dropping. Code comments and docstrings get the fewest possible words. Invoke the skill before writing or editing any of them. The rules live there, not here. Two sibling skills cover the other surfaces. `/theoryy-commit` handles commit messages. `/theoryy-speak` handles explaining something to the user in conversation: answer first, short plain sentences, no meta commentary.
 
+## Design philosophy
+
+`/theoryy-philosophy` governs what gets built. Default `minimal`: no new feature while the
+existing surface is under ~90% polished (known bugs, stale docs, failing checks count against it);
+prefer deleting to abstracting; smallest shippable diff — no speculative machinery; re-read the
+touched surface before extending it. The polish gate applies whether or not the skill is loaded —
+invoke it at feature decisions for the method.
+
 ## Lifecycle pipeline (optional)
 
 `/initiate` drives **brainstorm → plan → council → delegate** for a non-trivial job starting cold. `brainstorm` (diverge into distinct directions + forking questions); `plan` (converge into `action-plans/<slug>.md` with per-step owners + done-conditions); `council` (multi-lens panel — scope · simplicity · feasibility/risk · alternatives — returning go/no-go); then hand-off to a manager mode (`/orchestrator`, `/player-coach`, or `/commander`).
