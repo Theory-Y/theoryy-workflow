@@ -22,8 +22,6 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
   caps). Decide whether a maintainer skill returns before publish.
 - [ ] **Cap-regression check** — behavioral backstop: spawn each hard-capped agent, assert it
   cannot spawn (`tools:` omits Agent). Static check exists in the smoketest; behavioral doesn't.
-- [ ] **Hung-child hardening** — `/commander` re-dispatches flat when a `middle-manager` never
-  returns, instruction-only; add real detection if depth-2 hangs prove real.
 
 ### Migration (user-owned)
 
@@ -33,14 +31,14 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
 
 ## Notes
 
-- **Nested delegation kept deliberately** (2026-08-19 review): built for cross-repo, continuous
-  workflows — the Commander as the engineer's secretary, organizing commands down to managers,
-  then executors.
 - `/theoryy-philosophy` ships argument-less; the preset argument arrives with the second
   philosophy.
 - No push of this repo without the user's say-so.
 
 ## Recent changes (newest first)
+
+- **2026-08-22** — **Delegation is flat.** Nested delegation removed (skill, agent, and all
+  prose refs); main thread runs straight to executor tiers. Skills 11 → 10, agents 10 → 9.
 
 - **2026-08-19** — **v1.3.0: philosophy skill, de-graphify, debloat, smoketest.** New
   `theoryy-philosophy` skill (default `minimal`: polish gate ≥90%, deletion-first, smallest

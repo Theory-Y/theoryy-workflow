@@ -77,4 +77,4 @@ With the user's opt-in, use **Workflow** for a known work-list needing identical
 ## Memory
 Persistent cross-session memory lives with the executing subagents (`.claude/agent-memory/`) and the user's `MEMORY.md`, not here. Respect CLAUDE.md memory conventions.
 
-See also: `/orchestrator` — pure delegation, never executes. `/commander` — nested L1 mode for jobs splitting into independent sub-projects under `middle-manager` sub-leads; flat stays the default. Upstream: `/initiate` drives `/brainstorm → /plan → /council` into this mode.
+See also: `/orchestrator` — pure delegation, never executes. Upstream: `/initiate` drives `/brainstorm → /plan → /council` into this mode.

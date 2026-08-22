@@ -37,13 +37,12 @@ or `/initiate` to let Claude decide whether to run each:
 
 - **Plan before building.** Complex work gets a written plan that you can review, modify, and save for later. Major work gets a panel of councils to debate and refine that plan.
 
-`/orchestrator`, `/player-coach`, or `/commander`
+`/orchestrator` or `/player-coach`
 
 - **Delegation over grinding.** Run your main session in a more powerful model (Fable/Opus), let it do the high-level structural thinking. Cheaper, faster worker models do the code-writing, the powerful manager model reviews changes.
-- The three skills differ in how much the manager model does by hand
+- The two skills differ in how much the manager model does by hand
   - `orchestrator` — virtually none.
   - `player-coach` — hand-edits complex tasks, delegates menial ones.
-  - `commander` — (rarely used) your secretary who hands down work to `player-coaches`; lets you do quick edits to two separate repos, best if they are related. (DISCLAIMER: NOT A MULTITASKING TOOL BY DESIGN, IT'S PURPOSE IS TO ORGANISE AND RUN RELATED TASKS).
 
 ## Team
 

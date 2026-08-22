@@ -46,10 +46,6 @@ invoke it at feature decisions for the method.
 
 ## Lifecycle pipeline (optional)
 
-`/initiate` drives **brainstorm → plan → council → delegate** for a non-trivial job starting cold. `brainstorm` (diverge into distinct directions + forking questions); `plan` (converge into `action-plans/<slug>.md` with per-step owners + done-conditions); `council` (multi-lens panel — scope · simplicity · feasibility/risk · alternatives — returning go/no-go); then hand-off to a manager mode (`/orchestrator`, `/player-coach`, or `/commander`).
+`/initiate` drives **brainstorm → plan → council → delegate** for a non-trivial job starting cold. `brainstorm` (diverge into distinct directions + forking questions); `plan` (converge into `action-plans/<slug>.md` with per-step owners + done-conditions); `council` (multi-lens panel — scope · simplicity · feasibility/risk · alternatives — returning go/no-go); then hand-off to a manager mode (`/orchestrator` or `/player-coach`).
 
 Each phase skill is independently invokable. `/initiate` sequences them and gates on the user at direction and go/no-go. **Opt-in** — for trivial/obvious tasks, execute directly. (Named `initiate`, not `init`, to avoid the built-in `/init`.)
-
-## Nested delegation (optional)
-
-Default is **flat**: main thread runs `/orchestrator` or `/player-coach` straight to executor tiers. Only for a job decomposing into several **independent sub-projects**, escalate to `/commander` (L1): one `middle-manager` (L2 player-coach) per sub-project, each running its own executors. Chain capped at two layers (main → manager → executor; executors are leaves) — each layer is lossy. Nesting needs a recent Claude Code (verified 2.1.177); on older hosts a dispatched manager degrades to inline execution, so flat always works.

@@ -1,8 +1,8 @@
 {
   "name": "theoryy-workflow",
   "displayName": "TheoryY Workflow Bundle",
-  "version": "1.3.0",
-  "description": "TheoryY's reusable Claude Code workflow: manager + lifecycle skills (orchestrator, player-coach, commander, brainstorm, plan, council, initiate), task-executor/utility/review subagents (including the /council plan-review lenses), an optional depth-2 nested-delegation model (commander → middle-manager → executors), and an additive SessionStart workflow bootstrap that injects core/workflow.md.",
+  "version": "1.4.0",
+  "description": "TheoryY's reusable Claude Code workflow: manager + lifecycle skills (orchestrator, player-coach, brainstorm, plan, council, initiate), task-executor/utility/review subagents (including the /council plan-review lenses), and an additive SessionStart workflow bootstrap that injects core/workflow.md.",
   "author": {
     "name": "TheoryY Corporation",
     "email": "support@theoryy.dev",
