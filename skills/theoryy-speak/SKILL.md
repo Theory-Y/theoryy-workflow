@@ -1,6 +1,6 @@
 ---
 name: theoryy-speak
-description: "TheoryY house explanation style — explain in conversation using short plain sentences, answer first, no meta commentary, no filler words, audience a college student outside the field. Every sentence must add a fact: never assert a point then justify it, restate what the reader just said, or reword the previous clause. Define jargon in one clause at first use; keep code, commands, and error text verbatim. Optional session levels /theoryy-speak [base|terse] set compression (names match theoryy-docstyle; terse allows fragments). Use whenever explaining a concept, a design, a bug, or how something works to the user in chat. Trigger: /theoryy-speak, 'explain this', 'what does this do', 'how does X work', 'walk me through', 'ELI-college'. For text written into files use /theoryy-docstyle."
+description: "TheoryY house explanation style — explain in conversation using short plain sentences, answer first, no meta commentary, no filler words, audience a college student outside the field. Every sentence must add a fact: never assert a point then justify it, restate what the reader just said, or reword the previous clause. Define jargon in one clause at first use; keep code, commands, and error text verbatim. Optional session levels /theoryy-speak [base|terse] set compression (names match theoryy-docstyle; terse allows fragments); /theoryy-speak functional instead shifts audience — everyday words a non-technical or ESL reader follows, function over engineering ('explain for my manager', 'no jargon', 'for the demo'). Use whenever explaining a concept, a design, a bug, or how something works to the user in chat. Trigger: /theoryy-speak, 'explain this', 'what does this do', 'how does X work', 'walk me through', 'ELI-college'. For text written into files use /theoryy-docstyle."
 trigger: /theoryy-speak
 ---
 
@@ -87,14 +87,20 @@ the sentence that explains the point; keep the one that states what happens if i
 
 ## Levels
 
-`/theoryy-speak [level]` sets compression for the rest of the session. No argument = `base`.
-Names match `theoryy-docstyle`. Every level keeps: answer first, exact strings verbatim, jargon
-defined at first use, and the slow-down rule below.
+`/theoryy-speak [level]` sets the level for the rest of the session. No argument = `base`.
+Compression names match `theoryy-docstyle`; `functional` is speak-only. Every level keeps: answer
+first, exact strings verbatim, jargon defined at first use, and the slow-down rule below.
 
 - `base` — default. The rules above; full plain sentences.
 - `terse` — minimum words. Fragments allowed, one fact per fragment:
   `Hook injects workflow.md at session start. Mid-session edit: next session.`
   Never compress into ambiguity — if a fragment can be misread, spend the words.
+- `functional` — audience preset, not a compression step: pins `base` compression and swaps the
+  audience to a non-technical or ESL listener. Common everyday words. No analogy where a plain
+  expression works. Explain what the code does for the user, not how it is engineered — a demo to
+  a business manager, not a briefing to a tech lead. Replaces the college-level audience default
+  and its analogy allowance; every other rule holds, and a warning is never simplified past the
+  fact.
 
 Switch back anytime with `/theoryy-speak base`.
 
@@ -125,6 +131,27 @@ Second failure, no openers or closers — every sentence still restates the one 
 > that daily decision is what breaks it.*
 
 > ✅ *Hiding beats ranking — a hidden folder leaves nothing to re-decide each morning.*
+
+One question at each level — *"Why did the deploy fail?"*:
+
+> `base` — *The deploy script reads `DEPLOY_ENV` before the config loads, so it sees an empty
+> value and stops. Load the config first, or set the variable in CI.*
+
+> `terse` — *`DEPLOY_ENV` read before config load — empty, deploy stops. Load config first.*
+> (`terse` is the house caveman flavour: articles and auxiliary verbs dropped, noun-heavy
+> fragments, code and commands kept exact.)
+
+> `functional` — *The update never reached the site. The system checked a setting before the
+> setting was filled in, so it stopped to be safe. A one-line fix changes the order; updates then
+> go out normally.*
+
+`functional` done badly is not too many words — it is talking down, analogy soup, and a warning
+simplified away:
+
+> ❌ *Think of the deploy like mailing a letter without a stamp! The mailbox is our server, and
+> the stamp is a tiny setting. Nothing to worry about.*
+
+The failure was real; "nothing to worry about" hides it. Plain words, facts kept.
 
 ## Method
 
