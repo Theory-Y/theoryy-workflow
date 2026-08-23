@@ -1,5 +1,9 @@
 # TheoryY Workflow
 
+> [!WARNING]
+> Rapid release cycle — skills change faster than this README. Where they disagree, trust the
+> skills (`skills/*/SKILL.md`) and `ROADMAP.md`.
+
 A plugin that makes Claude's work scalable, maintainable, and easy-to-understand. It even responds to you in an understandable language!
 
 Inspiration: `caveman` and `superpowers` in a single package.
