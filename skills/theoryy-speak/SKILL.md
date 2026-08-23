@@ -96,9 +96,12 @@ first, exact strings verbatim, jargon defined at first use, and the slow-down ru
   `Hook injects workflow.md at session start. Mid-session edit: next session.`
   Never compress into ambiguity — if a fragment can be misread, spend the words.
 - `functional` — audience preset, not a compression step: pins `base` compression and swaps the
-  audience to a non-technical or ESL listener. Common everyday words; no idioms or regional
-  sayings ("money chasing goods", "firefighting"). An analogy only when the idea is hard to grasp
-  literally — never where a plain expression works. Explain what the code does for the user, not
+  audience to a non-technical or ESL listener. Common everyday words; no idioms, regional
+  sayings, or vivid figurative wording ("money chasing goods", "firefighting", "burns through
+  its spare time"). The test: if a non-native reader taking the phrase literally gets the wrong
+  picture, reword it. Pick the dull literal verb — "uses up", not "burns through"; description
+  stays flat, never lively. An analogy only when the idea is hard to grasp literally — never
+  where a plain expression works. Explain what the code does for the user, not
   how it is engineered — a demo to a business manager, not a briefing to a tech lead. Simplify
   the wording, never the content: keep the runnable fix and the next step (never "ask someone"
   in their place), and never simplify a warning past the fact. Length is free, but every phrase
