@@ -23,6 +23,11 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
 - [ ] **Cap-regression check** — behavioral backstop: spawn each hard-capped agent, assert it
   cannot spawn (`tools:` omits Agent). Static check exists in the smoketest; behavioral doesn't.
 
+### Deferred
+
+- [ ] **Subfolder READMEs missing** — `core/workflow.md` says every meaningful subfolder carries
+  one; none does (`skills/`, `agents/`, `hooks/`). Decide: create them or relax the rule.
+
 ### Migration (user-owned)
 
 - [ ] Three team users still run the sinapsis-branded predecessor; user migrates them personally.
@@ -36,6 +41,14 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
 - No push of this repo without the user's say-so.
 
 ## Recent changes (newest first)
+
+- **2026-08-22** — **v1.5.0: `functional` speak level, style levels collapsed to two.** Speak and
+  docstyle drop from three levels to two: `terse-lite` → `base` (word-dropping now allowed only in
+  human docs), `terse-full` → `terse`. New `/theoryy-speak functional`: audience preset pinning
+  `base` compression — everyday words for a non-technical/ESL listener, no analogy where a plain
+  expression works, function over engineering. Three-way calibration + done-badly non-example in
+  speak; `terse` documented as the house caveman flavour. `speak-nudge.sh` now defers to a
+  session-set level. 1.4.0 and 1.5.0 release together (1.4.0 never shipped).
 
 - **2026-08-22** — **Delegation is flat.** Nested delegation removed (skill, agent, and all
   prose refs); main thread runs straight to executor tiers. Skills 11 → 10, agents 10 → 9.
