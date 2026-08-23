@@ -34,7 +34,7 @@ Each meaningful subfolder carries a `README.md` (purpose + local conventions). W
 
 ## House style
 
-`/theoryy-docstyle` sets the wording of everything written into the repo. It maps each file type to one of three compression levels. Agent-readable files (`SKILL.md`, agent definitions, this file) get plain full grammar. Human docs (`README.md`, `DESIGN.md`, `ROADMAP.md`) get word-dropping. Code comments and docstrings get the fewest possible words. Invoke the skill before writing or editing any of them. The rules live there, not here. `/theoryy-commit` handles commit messages. `/theoryy-speak` handles explaining something to the user in conversation: answer first, short plain sentences, no meta commentary.
+`/theoryy-docstyle` sets the wording of everything written into the repo. It maps each file type to one of two compression levels. Docs get `base`: plain full grammar, with light word-dropping allowed in human docs (`README.md`, `DESIGN.md`, `ROADMAP.md`) but not in agent-readables (`SKILL.md`, agent definitions, this file). Code comments and docstrings get `terse`: the fewest possible words. Invoke the skill before writing or editing any of them. The rules live there, not here. `/theoryy-commit` handles commit messages. `/theoryy-speak` handles explaining something to the user in conversation: answer first, short plain sentences, no meta commentary.
 
 ## Design philosophy
 

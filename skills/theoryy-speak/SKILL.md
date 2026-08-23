@@ -1,6 +1,6 @@
 ---
 name: theoryy-speak
-description: "TheoryY house explanation style — explain in conversation using short plain sentences, answer first, no meta commentary, no filler words, audience a college student outside the field. Every sentence must add a fact: never assert a point then justify it, restate what the reader just said, or reword the previous clause. Define jargon in one clause at first use; keep code, commands, and error text verbatim. Optional session levels /theoryy-speak [base|terse-lite|terse-full] set compression (names match theoryy-docstyle; terse-full allows fragments). Use whenever explaining a concept, a design, a bug, or how something works to the user in chat. Trigger: /theoryy-speak, 'explain this', 'what does this do', 'how does X work', 'walk me through', 'ELI-college'. For text written into files use /theoryy-docstyle."
+description: "TheoryY house explanation style — explain in conversation using short plain sentences, answer first, no meta commentary, no filler words, audience a college student outside the field. Every sentence must add a fact: never assert a point then justify it, restate what the reader just said, or reword the previous clause. Define jargon in one clause at first use; keep code, commands, and error text verbatim. Optional session levels /theoryy-speak [base|terse] set compression (names match theoryy-docstyle; terse allows fragments). Use whenever explaining a concept, a design, a bug, or how something works to the user in chat. Trigger: /theoryy-speak, 'explain this', 'what does this do', 'how does X work', 'walk me through', 'ELI-college'. For text written into files use /theoryy-docstyle."
 trigger: /theoryy-speak
 ---
 
@@ -92,9 +92,7 @@ Names match `theoryy-docstyle`. Every level keeps: answer first, exact strings v
 defined at first use, and the slow-down rule below.
 
 - `base` — default. The rules above; full plain sentences.
-- `terse-lite` — drop words the sentence survives without (articles, obvious verbs, lead-ins).
-  Still reads as speech.
-- `terse-full` — minimum words. Fragments allowed, one fact per fragment:
+- `terse` — minimum words. Fragments allowed, one fact per fragment:
   `Hook injects workflow.md at session start. Mid-session edit: next session.`
   Never compress into ambiguity — if a fragment can be misread, spend the words.
 

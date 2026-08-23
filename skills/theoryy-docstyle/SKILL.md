@@ -1,6 +1,6 @@
 ---
 name: theoryy-docstyle
-description: "TheoryY house documentation & code-writing style — plain sentences, no meta commentary, every sentence adding a fact (no assert-then-justify, no restating the heading, no serial paraphrase, no evaluative filler), three terseness levels mapped to file type: terse-full (minimum words) for in-code comments & docstrings, terse-lite (conversational word-dropping) for human-readable docs (README, DESIGN, ROADMAP), base (plain full grammar) for agent-readables (SKILL.md, agents, CLAUDE.md). Define jargon before use; ban unproductive buzzwords. Use whenever writing or editing code comments, docstrings, READMEs, design docs, or any project documentation. Covers text written into files; for explaining in conversation use /theoryy-speak. Trigger: /theoryy-docstyle, 'document this', 'add a docstring', 'write the README', 'write docs'."
+description: "TheoryY house documentation & code-writing style — plain sentences, no meta commentary, every sentence adding a fact (no assert-then-justify, no restating the heading, no serial paraphrase, no evaluative filler), two terseness levels mapped to file type: terse (minimum words) for in-code comments & docstrings, base (plain full grammar; light word-dropping allowed in human docs) for everything else. Define jargon before use; ban unproductive buzzwords. Use whenever writing or editing code comments, docstrings, READMEs, design docs, or any project documentation. Covers text written into files; for explaining in conversation use /theoryy-speak. Trigger: /theoryy-docstyle, 'document this', 'add a docstring', 'write the README', 'write docs'."
 trigger: /theoryy-docstyle
 ---
 
@@ -14,18 +14,14 @@ Applies to text written into files. Siblings: `theoryy-commit` (commit messages)
 > **The one rule: every word must carry information the reader doesn't already have.** Cut words
 > that restate the code, the signature, or the previous sentence.
 
-## Three levels
+## Two levels
 
-Pick the level from the file type. All three share the same base rules; each adds compression.
+Pick the level from the file type. Both share the same base rules.
 
 | Level | Rule | Applies to |
 |---|---|---|
-| **base** | Plain language, full grammar. Don't overexplain. No unproductive jargon. Audience: a college student new to the project. Describe changes and results. | Agent-readables: SKILL.md, agent definitions, hook docs, workflow.md, CLAUDE.md |
-| **terse-lite** | base, plus conversational word-dropping — omit articles and obvious verbs when understanding survives. | Human-readable docs: README.md, DESIGN.md, BRAND.md, ROADMAP.md, action plans |
-| **terse-full** | Minimum number of words that still carry the core information. | In-code: comments and docstrings |
-
-Agent-readables get the *least* compressed level on purpose: agents need complete, unambiguous
-grammar; humans skim.
+| **base** | Plain language, full grammar. Don't overexplain. No unproductive jargon. Audience: a college student new to the project. Human docs (README.md, DESIGN.md, ROADMAP.md, action plans) may drop articles and obvious verbs where understanding survives; agent-readables (SKILL.md, agent definitions, CLAUDE.md, workflow.md) keep complete, unambiguous grammar. | All docs, human and agent-readable |
+| **terse** | Minimum number of words that still carry the core information. | In-code: comments and docstrings |
 
 ## Plain sentences, no meta commentary (all levels)
 
@@ -77,7 +73,7 @@ Four failure modes, hardest to spot first:
 **This rule never shortens a warning.** Constraints, failure modes, consequences, and ordered steps
 are facts. Cut the sentence that explains a point; keep the one stating what breaks without it.
 
-## In-code rules (terse-full)
+## In-code rules
 
 - Docstrings are 1–3 lines: what it does, plus the one non-obvious behavior (a raise, a side
   effect, a constraint). Nothing else.
@@ -96,7 +92,7 @@ def resolve_bundle_member(path: str) -> Member:
 if member.path != manifest_entry.path:
 ```
 
-## Doc-file rules (terse-lite)
+## Doc-file rules
 
 - **Definitions before jargon.** Define each term of art at first use, before relying on it.
   Bold-lead pattern works well: `**Payload** — the files the plugin ships: agents/, skills/, hooks/, core/.`
