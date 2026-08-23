@@ -42,6 +42,10 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
 
 ## Recent changes (newest first)
 
+- **2026-08-22** — **v1.6.0 shipped — first push of this repo.** `functional` calibrated on live
+  Opus probes (7 topics + controls): idiom/figurative-wording ban with a literal-reading test,
+  keep-the-runnable-fix rule, sentence-shape guidance. 1.4.0–1.6.0 release together.
+
 - **2026-08-22** — **v1.5.0: `functional` speak level, style levels collapsed to two.** Speak and
   docstyle drop from three levels to two: `terse-lite` → `base` (word-dropping now allowed only in
   human docs), `terse-full` → `terse`. New `/theoryy-speak functional`: audience preset pinning
