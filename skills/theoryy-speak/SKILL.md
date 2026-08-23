@@ -96,11 +96,15 @@ first, exact strings verbatim, jargon defined at first use, and the slow-down ru
   `Hook injects workflow.md at session start. Mid-session edit: next session.`
   Never compress into ambiguity — if a fragment can be misread, spend the words.
 - `functional` — audience preset, not a compression step: pins `base` compression and swaps the
-  audience to a non-technical or ESL listener. Common everyday words. No analogy where a plain
-  expression works. Explain what the code does for the user, not how it is engineered — a demo to
-  a business manager, not a briefing to a tech lead. Replaces the college-level audience default
-  and its analogy allowance; every other rule holds, and a warning is never simplified past the
-  fact.
+  audience to a non-technical or ESL listener. Common everyday words; no idioms or regional
+  sayings ("money chasing goods", "firefighting"). An analogy only when the idea is hard to grasp
+  literally — never where a plain expression works. Explain what the code does for the user, not
+  how it is engineered — a demo to a business manager, not a briefing to a tech lead. Simplify
+  the wording, never the content: keep the runnable fix and the next step (never "ask someone"
+  in their place), and never simplify a warning past the fact. Length is free, but every phrase
+  must carry a new fact: three digestible sentences beat two structurally complex ones, and beat
+  five fragments — ideas tie together, nothing is re-explained. Replaces the college-level
+  audience default; every other rule holds.
 
 Switch back anytime with `/theoryy-speak base`.
 
@@ -145,13 +149,14 @@ One question at each level — *"Why did the deploy fail?"*:
 > setting was filled in, so it stopped to be safe. A one-line fix changes the order; updates then
 > go out normally.*
 
-`functional` done badly is not too many words — it is talking down, analogy soup, and a warning
-simplified away:
+`functional` done badly is not too many words — it is talking down, analogy soup, a warning
+simplified away, or the fix replaced with "ask someone":
 
 > ❌ *Think of the deploy like mailing a letter without a stamp! The mailbox is our server, and
-> the stamp is a tiny setting. Nothing to worry about.*
+> the stamp is a tiny setting. Nothing to worry about — ask your admin to sort it out.*
 
-The failure was real; "nothing to worry about" hides it. Plain words, facts kept.
+The failure was real; "nothing to worry about" hides it, and the reader could have run the fix
+themselves. Plain words, facts kept, next step kept.
 
 ## Method
 
