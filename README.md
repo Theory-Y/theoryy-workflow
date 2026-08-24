@@ -19,11 +19,11 @@ Over time, you get a repo that is cluttered, hard-to-maintain, and difficult to 
 
 ## Solution
 
-`/theoryy-speak`
+`/theoryy-speak [ base | functional | terse ]`
 
 - **Responses lead with the answer** in plain sentences, no filler, no meta commentary. i.e. no more "My point is not X, but rather Y".
 
-`/theoryy-docstyle`
+`/theoryy-docstyle [ base | functional | terse ]`
 
 - **Terse documentation.** Docs say only what the reader doesn't already know.
 
