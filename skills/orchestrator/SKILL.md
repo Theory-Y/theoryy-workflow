@@ -63,6 +63,7 @@ Cheapest capable resource wins; bias hard toward the cheap end:
 - "Where is X / which files" → `Explore`, never grep yourself. Mechanical moves → `folder-restructurer`.
 - Real implementation/analysis → `task-executor-*` with a **curated brief**: deliverable, success criteria, constraints, relevant paths.
 - Known list needing the same multi-stage treatment per item → `Workflow` (pipeline by default).
+- Getting to know a topic from outside sources → `/theoryy-research` (it runs this loop with its own briefs).
 - `hands-on`: architectural spine / 30-second edit / context only you hold → play it, then return to managing.
 
 **Executor tier — pick on stakes × complexity:**

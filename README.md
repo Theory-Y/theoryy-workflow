@@ -39,6 +39,12 @@ Over time, you get a repo that is cluttered, hard-to-maintain, and difficult to 
   over-engineer; no new feature while the current work is under ~90% polished (daily-drivable);
   ship the smallest diff that works.
 
+`/theoryy-research`
+
+- **Get to know a topic.** A briefing pitched at what you already know: how it works, who and what
+  matter, what's disputed, the non-obvious insights, and where to go deeper. Facts are sourced and
+  the key ones checked.
+
 `/brainstorm` → `/plan` → `/council`,\
 or `/initiate` to let Claude decide whether to run each:
 
@@ -72,7 +78,7 @@ or `/initiate` to let Claude decide whether to run each:
 
 ## Under the hood (high level)
 
-- The repo **is** the plugin: `skills/` holds the 9 slash commands, `agents/` holds the 9 helpers they can call, `hooks/` loads the workflow at the start of a session, keeps the chat style active, and gives every helper the design philosophy, `core/workflow.md` is the file that gets loaded in.
+- The repo **is** the plugin: `skills/` holds the 10 slash commands, `agents/` holds the 9 helpers they can call, `hooks/` loads the workflow at the start of a session, keeps the chat style active, and gives every helper the design philosophy, `core/workflow.md` is the file that gets loaded in.
 - Delegation is one level deep: the manager calls helpers, and a helper can't call helpers of its own.
 - Install: `claude plugin marketplace add Theory-Y/theoryy-workflow`, then enable `theoryy-workflow`.
 
