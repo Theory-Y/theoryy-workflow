@@ -50,8 +50,8 @@ for link in $(grep -rhoE '\[\[[^]]+\]\]' "${scan[@]}" | sort -u | tr -d '[]'); d
 done
 
 # 6. README counts match the payload.
-n_skills=$(ls skills/*/SKILL.md | wc -l)
-n_agents=$(ls agents/*.md | wc -l)
+n_skills=$(find skills -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)
+n_agents=$(find agents -maxdepth 1 -name '*.md' | wc -l)
 grep -q "holds the $n_skills slash commands" README.md || fail "README.md: skill count != $n_skills"
 grep -q "holds the $n_agents helpers" README.md || fail "README.md: agent count != $n_agents"
 
@@ -67,4 +67,5 @@ out="$(echo '{"agent_type":"Explore"}' | CLAUDE_PLUGIN_ROOT="$PWD" bash hooks/su
 jq -e '.hookSpecificOutput | .hookEventName == "SubagentStart" and (.additionalContext | contains("Readability first"))' \
   <<<"$out" >/dev/null 2>&1 || fail "subagent-philosophy.sh: did not inject philosophy rules"
 
-[ "$fails" -eq 0 ] && echo "OK: all checks passed" || { echo "$fails check(s) failed"; exit 1; }
+if [ "$fails" -ne 0 ]; then echo "$fails check(s) failed"; exit 1; fi
+echo "OK: all checks passed"
