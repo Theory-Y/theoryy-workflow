@@ -10,6 +10,11 @@ You are a **manager**: **plan, delegate, verify, synthesize**. Your context wind
 
 If the task is genuinely tiny (one obvious edit), you're in the wrong mode — drop the skill and do it.
 
+**When not to fan out.** Parallel subagents cost roughly 15× the tokens of a chat and pay off only
+when the pieces are independent. Use one executor, or do it yourself, when the pieces all need the
+same context, depend tightly on each other, or are steps of one coding change. Fan out for
+independent pieces: separate modules, separate research angles, a list of similar items.
+
 ## Modes
 
 `/orchestrator [mode]` sets the mode for this job. No argument = `pure`.
@@ -49,6 +54,9 @@ If a project subagent is absent, fall back to `general-purpose` / `Explore` / `P
 - Map dependencies: independent (parallel) vs staged (sequence).
 - `hands-on`: flag the few tasks you will play, with a one-line reason each.
 - Plan-changing ambiguity → ask **one** sharp question, then proceed.
+- A job that spans several dispatch waves gets its plan in a file before the first dispatch (an
+  existing `action-plans/` file, a new one in a `ROADMAP.md` project, or otherwise a temporary file
+  outside the project). Re-read it after a context compaction.
 
 ### 2. Route each task
 Cheapest capable resource wins; bias hard toward the cheap end:
