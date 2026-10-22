@@ -17,7 +17,7 @@ Drive the **full lifecycle**: `brainstorm → plan → council → delegate`, on
 1. **Brainstorm** → `/brainstorm`. Diverge: distinct directions, forking questions, pick a direction. *Skip if the approach is already settled.*
 2. **Plan** → `/plan`. Converge: write `action-plans/<slug>.md` with per-step owner, effort tier, done-condition, dependencies. *Start here if a direction was handed in but no plan exists.*
 3. **Council** → `/council` in **baseline parallel-`Agent` mode (no `Workflow` opt-in)** — never its deep Workflow panel in an unattended run. Stress-test across the four lenses, reconcile, amend, take the **go / no-go**. *Skip only for genuinely low-stakes plans; never for irreversible or load-bearing work.*
-4. **Delegate** → hand the approved plan to the right manager mode (below), then ensure workflow **step 7** runs (`ROADMAP.md`, subfolder READMEs).
+4. **Delegate** → hand the approved plan to the right manager mode (below), then ensure workflow **step 7** runs (`ROADMAP.md`, any affected subfolder README).
 
 Run in order, but **gate on the user** at the decision points (direction after brainstorm; go/no-go after council) — don't barrel through unattended.
 
