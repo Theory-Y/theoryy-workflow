@@ -33,8 +33,11 @@ Over time, you get a repo that is cluttered, hard-to-maintain, and difficult to 
 
 `/theoryy-philosophy`
 
-- **A minimal design philosophy.** No new feature while the current work is under ~90% polished (daily-drivable);
-  prefer deleting to abstracting; ship the smallest diff that works.
+- **A maintainable-first design philosophy.** Applies to code, docs, folders, plans, and config alike.
+  Readable over abstractions on abstractions. Complex jobs get only the structure they need so no
+  single piece owns everything. Never
+  over-engineer; no new feature while the current work is under ~90% polished (daily-drivable);
+  ship the smallest diff that works.
 
 `/brainstorm` → `/plan` → `/council`,\
 or `/initiate` to let Claude decide whether to run each:
@@ -64,7 +67,7 @@ or `/initiate` to let Claude decide whether to run each:
 2. **Small task:** just do it.
 3. **Big task:** `/initiate` runs three steps — brainstorm ideas, write a plan, then four critics argue over the plan (is the scope right, is it too complex, what could go wrong, is there a better way). You get the final say: go or no-go.
 4. **Doing the work.** A manager hands each step to a helper sized to the job — a cheap one for routine edits, a solid one for real work, the strongest one for anything high-stakes. Pieces that don't depend on each other run side by side.
-5. **The whole way through.** One style keeps chat replies short, one keeps written docs short, one keeps commit messages short, and one philosophy decides whether a new feature is even worth adding.
+5. **The whole way through.** One style keeps chat replies short, one keeps written docs short, one keeps commit messages short, and one philosophy decides whether a new feature is worth adding and how the work is structured.
 6. **Afterwards.** The to-do list and the READMEs get updated so the next session starts caught up.
 
 ## Under the hood (high level)
