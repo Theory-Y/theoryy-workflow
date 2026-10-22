@@ -52,10 +52,10 @@ Tiers self-report lane mismatches; re-dispatch to the right tier rather than arg
 
 ### 3. Dispatch
 - Independent tasks in **parallel** — multiple Agent calls in one message; sequence only across real dependencies.
-- Self-contained briefs — subagents don't share your context. State deliverable, constraints, paths, and "return X" explicitly.
+- Self-contained briefs — subagents don't share your context. State deliverable, constraints, paths, and "return X" explicitly. Pass paths, not pasted file contents. Set a return length; with none set, executors cap reports at ~200 words.
 
 ### 4. Verify (do not rubber-stamp)
-- Read each result against its done-condition — subagents are confident even when wrong.
+- Check each result against its done-condition — subagents are confident even when wrong. Runnable condition → run it yourself (or read the `git diff`); a report's "Verified by" line is a claim, not proof.
 - Load-bearing results: **adversarially verify** with a second independent agent to refute or re-derive. Conflict → re-dispatch sharper.
 - On failure, diagnose at manager level (wrong brief? wrong owner?) and re-route — don't retry verbatim.
 

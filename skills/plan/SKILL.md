@@ -31,7 +31,7 @@ trigger: /plan
 
 1. **Confirm the direction**; if a real fork remains, ask one sharp question — don't re-open brainstorming.
 2. **Decompose** into smallest checkable steps; map dependencies.
-3. **Assign owners + done-conditions.**
+3. **Assign owners + done-conditions.** Prefer a done-condition the manager can run: a command and its expected result (`scripts/check.sh` exits 0, a named test passes). Use a judged condition only when no command can check the step.
 4. **Write** `action-plans/<slug>.md`.
 5. **Hand off** — to `/council` to stress-test, then a manager mode to execute.
 

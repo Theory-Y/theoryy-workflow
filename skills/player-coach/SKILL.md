@@ -54,11 +54,11 @@ Tiers self-report lane mismatches; re-dispatch (or play it). Each tier keeps its
 
 ### 3. Dispatch
 - Independent delegated tasks in parallel (multiple Agent calls, one message); sequence only across real dependencies.
-- Self-contained briefs — subagents don't share your context.
+- Self-contained briefs — subagents don't share your context. Pass paths, not pasted file contents. Set a return length; with none set, executors cap reports at ~200 words.
 - Interleave: execute your own flagged unit while subagents run; don't sit idle.
 
 ### 4. Verify (including your own work)
-- Check every result — delegated *and* self-done — against its done-condition.
+- Check every result — delegated *and* self-done — against its done-condition. Runnable condition → run it yourself (or read the `git diff`); a report's "Verified by" line is a claim, not proof.
 - Adversarially verify load-bearing results with an independent agent. Conflict → re-dispatch sharper.
 - Hold your own plays to the same bar.
 
