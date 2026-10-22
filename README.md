@@ -72,7 +72,7 @@ or `/initiate` to let Claude decide whether to run each:
 
 ## Under the hood (high level)
 
-- The repo **is** the plugin: `skills/` holds the 10 slash commands, `agents/` holds the 9 helpers they can call, `hooks/` loads the workflow at the start of a session and keeps the chat style active, `core/workflow.md` is the file that gets loaded in.
+- The repo **is** the plugin: `skills/` holds the 10 slash commands, `agents/` holds the 9 helpers they can call, `hooks/` loads the workflow at the start of a session, keeps the chat style active, and gives every helper the design philosophy, `core/workflow.md` is the file that gets loaded in.
 - Delegation is one level deep: the manager calls helpers, and a helper can't call helpers of its own.
 - Install: `claude plugin marketplace add Theory-Y/theoryy-workflow`, then enable `theoryy-workflow`.
 

@@ -44,8 +44,9 @@ responsibility with only the layers that make the next change easier, and no sin
 every concern (god object, catch-all README or skill); never over-engineer;
 no new feature while the existing surface is under ~90% polished (known bugs, stale docs, failing
 checks count against it); smallest shippable diff; re-read the touched surface before extending
-it. The polish gate applies whether or not the skill is loaded —
-invoke it at feature decisions for the method.
+it. These rules hold for every change to the project, whether or not the skill is loaded. Invoke
+`/theoryy-philosophy` before implementing anything: code, docs, structure, or config. A
+`SubagentStart` hook injects the same rules into every subagent.
 
 ## Lifecycle pipeline (optional)
 
