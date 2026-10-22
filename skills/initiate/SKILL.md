@@ -25,7 +25,7 @@ Run in order, but **gate on the user** at the decision points (direction after b
 
 ## Manager-mode selection (phase 4)
 
-- Handful of bounded tasks, some parallel → `/orchestrator` (pure) or `/player-coach` (hybrid). The flat default.
+- Handful of bounded tasks, some parallel → `/orchestrator` (pure) or `/orchestrator hands-on` (hybrid). The flat default.
 - Trivial / one obvious edit → no manager; execute directly (you shouldn't have reached `/initiate`).
 
 ## Skip-conditions
@@ -44,4 +44,4 @@ Run in order, but **gate on the user** at the decision points (direction after b
 - Forgetting step 7 after delegation completes.
 - Letting a dispatched agent write docs or commits without the house styles.
 
-See also: `/brainstorm` · `/plan` · `/council` (phases) · `/orchestrator` · `/player-coach` (delegate phase) · `/theoryy-speak` · `/theoryy-docstyle` · `/theoryy-commit` (house styles: chat, docs, commits) · `core/workflow.md` (the standing workflow this drives).
+See also: `/brainstorm` · `/plan` · `/council` (phases) · `/orchestrator` (delegate phase) · `/theoryy-speak` · `/theoryy-docstyle` · `/theoryy-commit` (house styles: chat, docs, commits) · `core/workflow.md` (the standing workflow this drives).

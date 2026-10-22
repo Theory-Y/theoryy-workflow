@@ -50,6 +50,6 @@ it. These rules hold for every change to the project, whether or not the skill i
 
 ## Lifecycle pipeline (optional)
 
-`/initiate` drives **brainstorm → plan → council → delegate** for a non-trivial job starting cold. `brainstorm` (diverge into distinct directions + forking questions); `plan` (converge into `action-plans/<slug>.md` with per-step owners + done-conditions); `council` (multi-lens panel — scope · simplicity · feasibility/risk · alternatives — returning go/no-go); then hand-off to a manager mode (`/orchestrator` or `/player-coach`).
+`/initiate` drives **brainstorm → plan → council → delegate** for a non-trivial job starting cold. `brainstorm` (diverge into distinct directions + forking questions); `plan` (converge into `action-plans/<slug>.md` with per-step owners + done-conditions); `council` (multi-lens panel — scope · simplicity · feasibility/risk · alternatives — returning go/no-go); then hand-off to `/orchestrator` (pure, or `hands-on`).
 
 Each phase skill is independently invokable. `/initiate` sequences them and gates on the user at direction and go/no-go. **Opt-in** — for trivial/obvious tasks, execute directly. (Named `initiate`, not `init`, to avoid the built-in `/init`.)

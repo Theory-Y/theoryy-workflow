@@ -6,7 +6,7 @@ trigger: /plan
 
 # /plan — convergent action-plan authoring
 
-**Convergent mode**: turn a chosen direction into a durable, delegatable plan persisted at `action-plans/<slug>.md` — this formalizes workflow step 4. A manager mode (`/orchestrator` · `/player-coach`) then executes it. Second phase of `/initiate`; also stands alone.
+**Convergent mode**: turn a chosen direction into a durable, delegatable plan persisted at `action-plans/<slug>.md` — this formalizes workflow step 4. A manager mode (`/orchestrator`) then executes it. Second phase of `/initiate`; also stands alone.
 
 **Distinct from the built-in `Plan` agent:** that agent architects in-conversation; `/plan` owns the **persisted artifact**, per-step **owner + effort-tier assignment**, **done-conditions + dependency graph**, and the brainstorm→plan→council handoff. You may call the `Plan` agent for the architecture pass — but your value is the durable, reviewable file, never a one-line passthrough.
 
@@ -42,4 +42,4 @@ trigger: /plan
 - Re-opening brainstorming instead of converging.
 - Starting execution yourself — write the plan, then delegate.
 
-See also: `/brainstorm` (diverge first) · `/council` (argue the draft) · `/orchestrator` · `/player-coach` (execute) · `/initiate` (full lifecycle).
+See also: `/brainstorm` (diverge first) · `/council` (argue the draft) · `/orchestrator` (execute) · `/initiate` (full lifecycle).

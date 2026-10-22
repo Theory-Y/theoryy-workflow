@@ -44,4 +44,4 @@ Inside the council, `plan-adversary-reviewer` serves only as the feasibility/ris
 - Firing the heavy `Workflow` mode inside an automated `/initiate` run.
 - Four identical critics — the value is *distinct* agendas.
 
-See also: `/plan` (drafts what this reviews) · the four lens agents (each summonable standalone) · `/initiate` · `/orchestrator` · `/player-coach` (execute the approved plan).
+See also: `/plan` (drafts what this reviews) · the four lens agents (each summonable standalone) · `/initiate` · `/orchestrator` (execute the approved plan).

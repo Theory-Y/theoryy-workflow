@@ -44,12 +44,12 @@ or `/initiate` to let Claude decide whether to run each:
 
 - **Plan before building.** Complex work gets a written plan that you can review, modify, and save for later. Major work gets a panel of councils to debate and refine that plan.
 
-`/orchestrator` or `/player-coach`
+`/orchestrator` or `/orchestrator hands-on`
 
 - **Delegation over grinding.** Run your main session in a more powerful model (Fable/Opus), let it do the high-level structural thinking. Cheaper, faster worker models do the code-writing, the powerful manager model reviews changes.
-- The two skills differ in how much the manager model does by hand
-  - `orchestrator` — virtually none.
-  - `player-coach` — hand-edits complex tasks, delegates menial ones.
+- The two modes differ in how much the manager model does by hand
+  - `/orchestrator` — virtually none.
+  - `/orchestrator hands-on` — hand-edits complex tasks, delegates menial ones.
 
 ## Team
 
@@ -72,7 +72,7 @@ or `/initiate` to let Claude decide whether to run each:
 
 ## Under the hood (high level)
 
-- The repo **is** the plugin: `skills/` holds the 10 slash commands, `agents/` holds the 9 helpers they can call, `hooks/` loads the workflow at the start of a session, keeps the chat style active, and gives every helper the design philosophy, `core/workflow.md` is the file that gets loaded in.
+- The repo **is** the plugin: `skills/` holds the 9 slash commands, `agents/` holds the 9 helpers they can call, `hooks/` loads the workflow at the start of a session, keeps the chat style active, and gives every helper the design philosophy, `core/workflow.md` is the file that gets loaded in.
 - Delegation is one level deep: the manager calls helpers, and a helper can't call helpers of its own.
 - Install: `claude plugin marketplace add Theory-Y/theoryy-workflow`, then enable `theoryy-workflow`.
 

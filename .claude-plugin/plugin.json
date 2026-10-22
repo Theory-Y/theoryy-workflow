@@ -2,7 +2,7 @@
   "name": "theoryy-workflow",
   "displayName": "TheoryY Workflow Bundle",
   "version": "1.6.0",
-  "description": "TheoryY's reusable Claude Code workflow: manager + lifecycle skills (orchestrator, player-coach, brainstorm, plan, council, initiate), house-style skills (theoryy-speak, theoryy-docstyle, theoryy-commit, theoryy-philosophy), task-executor/utility/review subagents (including the /council plan-review lenses), and an additive SessionStart workflow bootstrap that injects core/workflow.md.",
+  "description": "TheoryY's reusable Claude Code workflow: manager + lifecycle skills (orchestrator, brainstorm, plan, council, initiate), house-style skills (theoryy-speak, theoryy-docstyle, theoryy-commit, theoryy-philosophy), task-executor/utility/review subagents (including the /council plan-review lenses), and an additive SessionStart workflow bootstrap that injects core/workflow.md.",
   "author": {
     "name": "TheoryY Corporation",
     "email": "support@theoryy.dev",
