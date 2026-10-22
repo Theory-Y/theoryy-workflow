@@ -63,14 +63,14 @@ or `/initiate` to let Claude decide whether to run each:
 1. **Session start.** The plugin reads `ROADMAP.md` (the to-do list and change log) and the local READMEs, then picks or writes a plan.
 2. **Small task:** just do it.
 3. **Big task:** `/initiate` runs three steps — brainstorm ideas, write a plan, then four critics argue over the plan (is the scope right, is it too complex, what could go wrong, is there a better way). You get the final say: go or no-go.
-4. **Doing the work.** A manager hands each step to a helper sized to the job — a cheap one for routine edits, a solid one for real work, the strongest one for anything high-stakes. When a job splits into pieces that can run side by side, one manager can hand each piece to its own manager, who runs its own helpers.
+4. **Doing the work.** A manager hands each step to a helper sized to the job — a cheap one for routine edits, a solid one for real work, the strongest one for anything high-stakes. Pieces that don't depend on each other run side by side.
 5. **The whole way through.** One style keeps chat replies short, one keeps written docs short, one keeps commit messages short, and one philosophy decides whether a new feature is even worth adding.
 6. **Afterwards.** The to-do list and the READMEs get updated so the next session starts caught up.
 
 ## Under the hood (high level)
 
-- The repo **is** the plugin: `skills/` holds the 11 slash commands, `agents/` holds the 10 helpers they can call, `hooks/` loads the workflow at the start of a session and keeps the chat style active, `core/workflow.md` is the file that gets loaded in.
-- A manager can only hand work down two levels deep — a helper can't call more helpers of its own.
+- The repo **is** the plugin: `skills/` holds the 10 slash commands, `agents/` holds the 9 helpers they can call, `hooks/` loads the workflow at the start of a session and keeps the chat style active, `core/workflow.md` is the file that gets loaded in.
+- Delegation is one level deep: the manager calls helpers, and a helper can't call helpers of its own.
 - Install: `claude plugin marketplace add Theory-Y/theoryy-workflow`, then enable `theoryy-workflow`.
 
-Not released yet. Licensed under [AGPL-3.0](LICENSE).
+Licensed under [AGPL-3.0](LICENSE).

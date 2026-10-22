@@ -4,7 +4,7 @@
 # Injects core/workflow.md into the session as `additionalContext` — the plugin-era
 # replacement for CLAUDE.md's `@import`. Additive: built-in prompt + tools stay intact.
 #
-# Gating (verified empirically, Phase 3a; see action-plans/plugin-promotion-phase3.md §2):
+# Gating (verified empirically, Phase 3a):
 #   startup | clear | compact -> INJECT (fresh/post-compact context needs it (re)added)
 #   resume                    -> SKIP   (resume reloads the transcript incl. the prior
 #                                         injection; re-injecting would duplicate it)
