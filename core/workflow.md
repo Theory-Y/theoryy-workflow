@@ -14,7 +14,13 @@
 6. Delegate agents or execute the plan.
 7. Afterwards: update `ROADMAP.md` (check off TODOs, append notable changes). If the folder you worked in has a `README.md`, update it via the `subdir-readme-author` agent.
 
+Steps 1–3 and 7 apply only when the project root has a `ROADMAP.md`. Without one, skip them, keep the step-4 plan in the conversation, and do not create `ROADMAP.md`, `action-plans/`, or subfolder READMEs unless the user asks.
+
 Every document, comment, and docstring you write follows the house style below.
+
+## Precedence
+
+This file sets generic defaults for any field. The project's `CLAUDE.md` overrides it where they conflict. So does a **field plugin**: another installed plugin whose skills cover the project's domain (for example, a plugin for legal drafting or data analysis). Follow the field plugin's procedure for its domain; these defaults fill only the gaps it leaves. This covers house style: a field plugin's deliverables (a contract, an analysis report) follow that plugin's writing rules, not `/theoryy-docstyle`.
 
 ## OVERRIDE.md
 
