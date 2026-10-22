@@ -47,7 +47,7 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
 
 ## Recent changes (newest first)
 
-- **2026-10-21** — **Maintainer gate + doc drift fixed.** `scripts/check.sh` committed, wired to
+- **2026-10-21** — **v1.7.0: maintainer gate, maintainable-first philosophy, `/orchestrator hands-on`, `/theoryy-research`.** `scripts/check.sh` committed, wired to
   GitHub Actions. Subfolder-README rule relaxed (only where file names don't explain the folder).
   README: counts 10 skills / 9 agents, flat delegation, "not released" dropped. plugin.json
   description lists the house-style skills. Dangling hook comment ref and nudge token estimate
