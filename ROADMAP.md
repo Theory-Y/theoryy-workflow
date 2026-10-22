@@ -47,6 +47,12 @@ TODO list + change log, not a knowledge base. Canonical home of the TheoryY work
 
 ## Recent changes (newest first)
 
+- **2026-10-21** — README header: TheoryY V3.4 lockup (navy/ivory by theme, in `.github/assets/`),
+  badges for checks, security, release, license, and Claude Code plugin; section links. New
+  `security` workflow (gitleaks over full history, shellcheck on hooks and scripts; weekly + on
+  push); `check.sh` made shellcheck-clean. README brought current: install/update commands,
+  python3 requirement, maintaining section, research analysis depth, non-software projects.
+
 - **2026-10-21** — **v1.7.0: maintainer gate, maintainable-first philosophy, `/orchestrator hands-on`, `/theoryy-research`.** `scripts/check.sh` committed, wired to
   GitHub Actions. Subfolder-README rule relaxed (only where file names don't explain the folder).
   README: counts 10 skills / 9 agents, flat delegation, "not released" dropped. plugin.json
